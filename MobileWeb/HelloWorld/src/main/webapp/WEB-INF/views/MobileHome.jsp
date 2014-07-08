@@ -6,12 +6,13 @@
 <jsp:include page="header.jsp">
 	<jsp:param value="Home" name="title"/>
 </jsp:include>
-
-		<p><strong>This is a demo.</strong><br />
-			Click <a href="#my-menu">here</a> to open the menu.</p>
-		<p>For more demos, a tutorial, documentation and support, please visit <a href="http://mmenu.frebsite.nl" target="_blank">mmenu.frebsite.nl</a></p>
+	
+				<p><strong>This is a demo.</strong><br />
+					Click here to open the menu.</p>
+				<p>For more demos, a tutorial, documentation and support, please visit <a href="http://mmenu.frebsite.nl" target="_blank">mmenu.frebsite.nl</a></p>
+			</div>
+		</div>
 	</div>
 </div>
-
 </body>
 </html>
