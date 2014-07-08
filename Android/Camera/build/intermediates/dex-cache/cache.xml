@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pre-dex-items>
+
+    <item
+        dex="C:\Users\NOGUEIBP\AndroidStudioProjects\Camera\camera\build\intermediates\pre-dexed\debug\classes-8a1f83dc3a23d94eadf60878851f01a1cc71e640.jar"
+        jar="C:\Users\NOGUEIBP\AndroidStudioProjects\Camera\build\intermediates\exploded-aar\com.android.support\appcompat-v7\19.1.0\classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="3499ceba05ca1f6037c6a2fad73df8f636224a28"/>
+    <item
+        dex="C:\Users\NOGUEIBP\AndroidStudioProjects\Camera\camera\build\intermediates\pre-dexed\debug\acra-4.5.0-4e8debe8b935ac4cc68a14c311d0a611655eaef6.jar"
+        jar="C:\Users\NOGUEIBP\AndroidStudioProjects\Camera\camera\libs\acra-4.5.0.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="44a5eb946e0d83eed4a0128d877ca1fd8168b83a"/>
+    <item
+        dex="C:\Users\NOGUEIBP\AndroidStudioProjects\Camera\camera\build\intermediates\pre-dexed\debug\support-v4-19.1.0-bafdc6f4df30ef651b02f48ea9f0225364a67a6b.jar"
+        jar="C:\Users\NOGUEIBP\AppData\Local\Android\android-studio\sdk\extras\android\m2repository\com\android\support\support-v4\19.1.0\support-v4-19.1.0.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67"/>
+
+</pre-dex-items>

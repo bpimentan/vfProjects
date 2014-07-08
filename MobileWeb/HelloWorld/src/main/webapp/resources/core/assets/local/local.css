@@ -1,0 +1,27 @@
+table, th, tr, td {
+    border: 1px solid black;
+	text-align: center;
+	vertical-align: center;
+	padding: 10px;
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+th {
+	background-color: #CCCCCC;
+}
+
+th.tabletitle {
+	text-align: left;
+	color: #E60000;
+}
+
+td {
+	background-color: #F4F8F0;
+	vertical-align: center;
+}
+
+
