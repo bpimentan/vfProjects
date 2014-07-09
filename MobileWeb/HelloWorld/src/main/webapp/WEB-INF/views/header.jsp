@@ -19,6 +19,12 @@
     <script src="resources/core/assets/js/lib/jquery-1.9.1.min.js" type="text/javascript"></script>
     <script src="resources/core/assets/touchswipe/jquery.touchSwipe.min.js" type="text/javascript"></script>
     <!--  -->
+    <!-- bxSlider Javascript file -->
+	<script src="resources/core/assets/slider/jquery.bxslider.js"></script>
+	<!-- bxSlider CSS file -->
+	<link href="resources/core/assets/slider/jquery.bxslider.css" rel="stylesheet" />
+	<!--  -->
+    <!--  -->
     <link rel="stylesheet" href="resources/core/assets/menu/slider.css">
 	<script type="text/javascript" src="resources/core/assets/menu/slider.js""></script>
     <!-- **************** -->  
@@ -39,34 +45,43 @@
 
 	
 <div id="page">
-		<div id="slider">
-			<ul id="menu" class="menu">
-				<li class="darkLI selected"><a id="reload" datatitle="Change"
-					href="${pageContext.request.contextPath}/">Files</a></li>
-				<li class="softLI"><a id="index"
-					href="${pageContext.request.contextPath}/Indexs">Live SLs</a></li>
-				<li class="softLI">
-					<a id="logOut"
-					href="${pageContext.request.contextPath}/logOut"><strong>Log Out</strong></a></li>	
-			</ul>
+	<div id="slider">
+		<ul id="menu" class="menu">
+			<li class="darkLI selected"><a id="reload" datatitle="Home"
+				href="${pageContext.request.contextPath}/MobileHome">Files</a></li>
+			<li class="softLI"><a id="index" datatitle="Survey Test"
+				href="${pageContext.request.contextPath}/SurveyTest" >Live SLs</a></li>
+			<li class="softLI">
+				<a id="logOut"
+				href="${pageContext.request.contextPath}/logOut"><strong>Log Out</strong></a></li>	
+		</ul>
+	</div>
+	<div id="closeSlider"></div>
+	
+	<div class="content" id="content">
+		<div class="header">
+			<table>
+				<tr>
+					<td width="20%" class="trHeader">
+						<div id="toggleMenu" class="toggleMenu"></div>
+						<div id="trigger"></div>	
+					</td>
+					<td align="center" valign="middle"><h2 align="center" id="title">${param.title}</h2></td>
+					<td align="left" width="85"><img src="resources/core/assets/img/vodafone_logo.png" width="87" height="47" align="right"></td>
+				</tr>
+			</table>
 		</div>
-		<div id="closeSlider"></div>
-		
-		<div class="content" id="content">
-			<div class="header">
-				<table>
-					<tr>
-						<td width="20%" class="trHeader">
-							<div id="toggleMenu" class="toggleMenu"></div>
-							<div id="trigger"></div>	
-						</td>
-						<td align="center" valign="middle"><h2 align="center" id="title">${param.title}</h2></td>
-						<td align="left" width="85"><img src="resources/core/assets/img/vodafone_logo.png" width="87" height="47" align="right"></td>
-					</tr>
-				</table>
-			</div>
-			<div class="content" style="padding-left:15px;">
-				<div id="app-content">
+		<div class="content" style="padding-left:15px;">
+			<div id="app-content">
 				<div id="toggle">
-						
+				
+				<c:import url="/WEB-INF/views/${page}.jsp"></c:import>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
 		

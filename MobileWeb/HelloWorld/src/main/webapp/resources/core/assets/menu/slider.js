@@ -10,13 +10,6 @@ $(document).ready(function() {
 		},
 		
 	});
-	//Para Fechar com Swipe
-	$(this).swipe({
-		swipeLeft:function(event, direction, distance, duration, fingerCount) {
-			setSliderSize();  
-		},
-		
-	});
 		
 	$(document).ready(function() {
 		$('#content').off('click');
@@ -45,7 +38,7 @@ $(document).ready(function() {
 	    }
 	    
 	    animateSlider();
-	    
+	    /*
 	    if(idVal == "logOut"){
 	    	 event.preventDefault();
 	         var addr  = $(this).find("a").attr("href");
@@ -61,7 +54,7 @@ $(document).ready(function() {
 	                 //$("#toggleMenu").hide();
 	             }
 	         });
-	    }else if( idVal != "" && idVal != " ")
+	    }else*/ if( idVal != "" && idVal != " ")
 	       {
 	            event.preventDefault();
 	            var addr  = $(this).find("a").attr("href");
@@ -73,6 +66,7 @@ $(document).ready(function() {
 	                success:function(result){
 	                    $('#toggle').html(result);
 	                    $('#title').html(seTitle);
+	                    document.location.hash = seTitle.replace(/\s/g,'');
 	                    
 	                }
 	            });
@@ -89,7 +83,7 @@ function animateSlider(){
 	//vai fechar
 	if($("#slider").css("right") == "105px"){
 
-		$("#slider").animate({right:"100%"},function(){$("#slider").css("width","0")});
+		$("#slider").animate({right:"100%"},function(){$("#slider").css("width","0");});
 		$("#content").animate({left:"0px",
 					right:"0px"});
 		$('#closeSlider').css("z-index","100");

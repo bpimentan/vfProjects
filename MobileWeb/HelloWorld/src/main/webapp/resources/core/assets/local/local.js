@@ -68,3 +68,16 @@ $(function(){
 	$('body').addClass('custom-class-local-js');
 
 });
+
+//SliderHOme
+$(document).ready(function(){
+	  $('.slider1').bxSlider({
+		auto: true,
+		controls: false,
+	    minSlides: 1,
+	    maxSlides: 1,
+	    slideMargin: 0,
+	    moveSlides: 1,
+	    startSlide: 1
+	  });
+	});
